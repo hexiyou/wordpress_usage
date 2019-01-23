@@ -2,8 +2,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 #RewriteBase /
-RewriteRule ^index\.php$ – [L]
-RewriteCond %{REQUEST_URI} ^(tag|category|post)/(.*)$
+RewriteRule ^/index\.php$ – [L]
+RewriteCond %{REQUEST_URI} ^/(tag|category|post)/(.*)$
 RewriteRule . /chineseUrl.php [L,QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
